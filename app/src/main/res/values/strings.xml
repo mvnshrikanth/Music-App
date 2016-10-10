@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Music App</string>
+    <string name="str_mn_acvty_hdg">MUSIC FOLDERS</string>
+
+    <string-array name="musiclist">
+        <item>"One Dance - Drake Ft Wizkid Drake Ft Wizkid And Kyla"</item>
+        <item>"7 Years - Lukas Graham"</item>
+        <item> "I Took A Pill In Ibiza - Mike Posner" </item>
+        <item>"Cheap Thrills - Sia"	</item>
+        <item>"This Is What You Came For - Calvin Harris Ft Rihanna"</item>
+        <item> 	"Lush Life - Zara Larsson"</item>
+        <item>"Work - Rihanna Ft Drake"</item>
+        <item>	"Love Yourself - Justin Bieber"</item>
+        <item>"Stitches - Shawn Mendes"</item>
+        <item>"Fast Car - Jonas Blue And Dakota"</item>
+        <item>"Work From Home - Fifth Harmony Ft Ty Dolla Sign"</item>
+        <item>"Can'T Stop The Feeling - Justin Timberlake"</item>
+    </string-array>
+
+    <string-array name="folderlist">
+        <item>"Drake"</item>
+        <item>"Lukas Graham"</item>
+        <item> "Mike Posner" </item>
+        <item>"Sia"	</item>
+    </string-array>
+
 </resources>
