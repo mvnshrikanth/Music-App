@@ -1,5 +1,6 @@
 package com.android.sunny.musicapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -32,6 +33,7 @@ public class SongListActivity extends AppCompatActivity {
     }
 
     public void nowPlaying(View view) {
-
+        Intent intent = new Intent(SongListActivity.this, NowPlaying.class);
+        startActivity(intent);
     }
 }
