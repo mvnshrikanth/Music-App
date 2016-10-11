@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:padding="16dp"
     tools:context="com.android.sunny.musicapp.MainActivity">
 
     <TextView
+        android:id="@+id/headng_txt_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:text="@string/str_mn_acvty_hdg"
-        android:textSize="32sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <ListView
         android:id="@+id/folder_list_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headng_txt_view" />
 
-</LinearLayout>
+</RelativeLayout>

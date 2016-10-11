@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_now_playing"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:padding="16dp"
     tools:context="com.android.sunny.musicapp.SongListActivity">
 
     <ListView
-        android:id="@+id/music_list_view"
+        android:id="@+id/list_view_music"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="9" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
 
     <LinearLayout
+        android:id="@+id/music_ctrl_liner_layout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:background="@color/colorLight"
         android:orientation="horizontal"
         android:padding="5dp">
@@ -29,6 +26,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:contentDescription="@string/cntnt_desc"
             android:onClick="nowPlaying"
             android:src="@drawable/ic_android_black" />
 
@@ -44,7 +42,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="Song Name"
                 android:textStyle="bold" />
 
             <ProgressBar
@@ -77,7 +74,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@null"
-                android:src="@drawable/ic_play_arrow_black_24dp" />
+                android:src="@drawable/ic_pause_black_24dp" />
 
             <ImageButton
                 android:layout_width="0dp"
@@ -88,4 +85,4 @@
         </LinearLayout>
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

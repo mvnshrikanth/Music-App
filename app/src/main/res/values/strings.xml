@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Music App</string>
-    <string name="str_mn_acvty_hdg">MUSIC FOLDERS</string>
+    <string name="str_mn_acvty_hdg">Music Folders</string>
+    <string name="cntnt_desc">Song Album Image</string>
 
     <string-array name="musiclist">
         <item>"One Dance - Drake Ft Wizkid Drake Ft Wizkid And Kyla"</item>
