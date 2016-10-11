@@ -8,13 +8,20 @@
     tools:context="com.android.sunny.musicapp.MainActivity">
 
     <TextView
-        android:id="@+id/headng_txt_view"
+        android:id="@+id/actvty_hdng_txt_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:paddingBottom="16dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
+        android:padding="8dp"
+        android:text="@string/txt_main_act_heading"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/headng_txt_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actvty_hdng_txt_view"
+        android:padding="16dp"
         android:text="@string/str_mn_acvty_hdg"
         android:textSize="20sp"
         android:textStyle="bold" />

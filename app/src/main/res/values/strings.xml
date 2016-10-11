@@ -2,7 +2,9 @@
     <string name="app_name">Music App</string>
     <string name="str_mn_acvty_hdg">Music Folders</string>
     <string name="cntnt_desc">Song Album Image</string>
-
+    <string name="txt_main_act_heading">This activity will show all the folders available in the phone which contains music files in it, users can select any of the folder and check the songs in the folder.</string>
+    <string name="txt_song_list_act_heading">This activity will show the songs available in the folder that was selected in the main activity, users can play any songs listed here and  play, pause, play next song or previous song using the music controls in the bottom of the screen, clicking on the album art in the bottom will take you to the now playing screen.</string>
+    <string name="txt_now_plyng_act_heading">This activity will show the current playing song, users can play, pause, play next song or previous song using the music controls in the bottom of the screen.</string>
     <string-array name="musiclist">
         <item>"One Dance - Drake Ft Wizkid Drake Ft Wizkid And Kyla"</item>
         <item>"7 Years - Lukas Graham"</item>

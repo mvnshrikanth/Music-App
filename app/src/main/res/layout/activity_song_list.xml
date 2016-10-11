@@ -7,11 +7,21 @@
     android:padding="16dp"
     tools:context="com.android.sunny.musicapp.SongListActivity">
 
+
+    <TextView
+        android:id="@+id/actvty_hdng_txt_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="8dp"
+        android:text="@string/txt_song_list_act_heading"
+        android:textStyle="italic|bold" />
+
     <ListView
         android:id="@+id/list_view_music"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true" />
+        android:layout_below="@id/actvty_hdng_txt_view" />
 
     <LinearLayout
         android:id="@+id/music_ctrl_liner_layout"
