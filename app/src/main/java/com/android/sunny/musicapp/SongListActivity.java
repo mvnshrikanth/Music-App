@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -32,12 +33,17 @@ public class SongListActivity extends AppCompatActivity {
                 textView.setText(musicStrings[position]);
             }
         });
-    }
 
-    public void nowPlaying(View view) {
-        Intent intent = new Intent(SongListActivity.this, NowPlaying.class);
-        TextView textView = (TextView) findViewById(R.id.song_name_text_view);
-        intent.putExtra(EXTRA_MESSAGE, textView.getText().toString());
-        startActivity(intent);
+        ImageView imageView = (ImageView) findViewById(R.id.album_art_img_view);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SongListActivity.this, NowPlaying.class);
+                TextView textView = (TextView) findViewById(R.id.song_name_text_view);
+                intent.putExtra(EXTRA_MESSAGE, textView.getText().toString());
+                startActivity(intent);
+            }
+        });
+
     }
 }

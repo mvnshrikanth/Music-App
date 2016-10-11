@@ -33,11 +33,11 @@
         android:padding="5dp">
 
         <ImageView
+            android:id="@+id/album_art_img_view"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:contentDescription="@string/cntnt_desc"
-            android:onClick="nowPlaying"
             android:src="@drawable/ic_android_black" />
 
         <LinearLayout
